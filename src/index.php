@@ -6,6 +6,9 @@
     <title>Inicio</title>
 </head>
 <body>
-    <?php echo "De la huerta a la mesa" ?>
+    <h1>
+
+        <?php echo "De la huerta a la mesa" ?>
+    </h1>
 </body>
 </html>
