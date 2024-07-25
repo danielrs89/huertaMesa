@@ -1,0 +1,19 @@
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de configuración de tu editor
+.vscode/
+*.code-workspace
+
+# Ignorar directorios de dependencias
+otros/
+
+# Ignorar archivos compilados
+*.log
+*.tmp
+*.out
+*.class
+
+# Ignorar archivos sensibles
+.env
