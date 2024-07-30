@@ -33,3 +33,34 @@ Estoy mirando las plantillas de web,
 - 32 colores +junDanie
 
 falta revisar en detalle lo que quiere de estas plantillas
+
+# 30/07/2024
+
+elección de plantilla( lo que quiero de cada una en concreto)
+
+- interesante
+94, 
+73, 
+72, 
+33 
+-  calendario
+92
+-  tarjetas - ampliar y corazon
+86, 
+49
+- ,  diseño -rosa +degradadoLayuJunDanie
+69=61
+-  diseño colores
+62
+-  diseño forma
+48
+-  diseño forma colores
+47
+-  colores diseño moderno
+38
+-  utilidades(tablas)
+35,21,9,1
+-  colores +junDanie
+32
+
+estado mirando la 38 y es un **rollo tener que modificar todo, pero empezar de cero es más complejo con el tema responsive** 
