@@ -15,3 +15,21 @@ guia [Docker & PHP](https://www.youtube.com/watch?v=-XnfBItOBHE)
     ```sh
         docker run -p 9090:80 -d -v $PWD/src:/var/www/html huertamesa
     ```
+
+#25/07/2024
+
+Añadido a git `.gitignore` dentro se pude poner todo lo relacionado al proyecto que no quiera subir a git
+
+Estoy mirando las plantillas de web, 
+- 94, 73, 72, 33 interesante
+- 92 calendario
+- 86, 49 tarjetas - ampliar y corazon
+- 69=61,  diseño -rosa +degradadoLayuJunDanie
+- 62 diseño colores
+- 48 diseño forma
+- 47 diseño forma colores
+- 38 colores diseño moderno
+- 35,21,9,1 utilidades(tablas)
+- 32 colores +junDanie
+
+falta revisar en detalle lo que quiere de estas plantillas
