@@ -8,7 +8,11 @@
 <body>
     <h1>
 
-        <?php echo "De la huerta a la mesa" ?>
+    <?php
+        require("index.html");
+        // require("archivo2.html");
+        ?>
+         
     </h1>
 </body>
 </html>
