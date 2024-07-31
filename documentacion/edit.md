@@ -64,3 +64,7 @@ elección de plantilla( lo que quiero de cada una en concreto)
 32
 
 estado mirando la 38 y es un **rollo tener que modificar todo, pero empezar de cero es más complejo con el tema responsive** 
+
+# 31/07/2024 
+
+me quedo con la 38 la estoy comentando para saber como funciona, mi idea es separar todo los componentes "menu, tarjetas"
