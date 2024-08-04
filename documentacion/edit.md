@@ -101,7 +101,8 @@ $host = 'host.docker.internal'; // Dirección del servidor de la base de datos
     docker run -p 9090:80 -d -v $PWD/src:/var/www/html huertamesa
 ```
 
-doy por cerrada esta rama ya funciona la conexion docker & bd
+doy por cerrada esta rama `anadir-bd` ya funciona la conexion docker & bd
 
 siguiente comprobar que hay conexion y la animacion inicial
+ya estan lo de la animación en una nueva rama creo estoy peleando con git
 
