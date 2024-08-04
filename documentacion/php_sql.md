@@ -196,7 +196,7 @@
     */
 ```
 
-# 12. limiar los textos
+# 12. limpiar los textos
 
 ```php
    // limiar los textos de sus etiquetas

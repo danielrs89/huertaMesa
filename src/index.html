@@ -31,6 +31,46 @@
 
 
 <body>
+  <!-- ===============================================-->
+  <!--    Productos estableciendo conexión bd-->
+  <!-- ===============================================-->
+
+  <!-- <?php  require("assets/php/sql.php"); 
+  // Establecer la conexión a la base de datos
+  $conexion = conexion();
+
+
+  // Realizar la consulta SQL para seleccionar todos los registros de la tabla 'flag'
+  $consulta = $conexion->query("SELECT * FROM products");
+
+  // Comenzar la construcción de la tabla HTML
+  echo "<table class='table'>";
+  echo "<thead>";
+  echo "<tr>";
+  echo "<th scope='col'>#</th>";
+  echo "<th scope='col'>Nombre</th>";
+  echo "<th scope='col'>Descripción</th>";
+  echo "</tr>";
+  echo "</thead>";
+  echo "<tbody>";
+
+  // Iterar a través de los resultados de la consulta y mostrar cada fila en la tabla
+  foreach ($consulta as $fila) {
+      echo "<tr>";
+      echo "<th scope='row'>" . $fila['id_product'] . "</th>";
+      echo "<td>" . $fila['name_product'] . "</td>";
+      echo "<td>" . $fila['submit'] . "</td>";
+      echo "</tr>";
+  }
+
+  // Cerrar la sección de la tabla HTML
+  echo "</tbody>";
+  echo "</table>";
+
+  // cerrar sesión PDO
+  $consulta = null;
+
+  ?> -->
 
   <!-- ===============================================-->
   <!--    Main Content-->

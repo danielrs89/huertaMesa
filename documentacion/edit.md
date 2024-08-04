@@ -68,3 +68,40 @@ estado mirando la 38 y es un **rollo tener que modificar todo, pero empezar de c
 # 31/07/2024 
 
 me quedo con la 38 la estoy comentando para saber como funciona, mi idea es separar todo los componentes "menu, tarjetas"
+
+# 4/8/24
+
+nueva rama `añadir-sql` para crear un docker compose donde se ejecute el proceso de php + sql
+
+```sh
+docker-compose up -d
+
+$env:MYSQL_ROOT_PASSWORD = "root"
+$env:MYSQL_DATABASE = "huertamesa"
+$env:MYSQL_USER = "admin"
+$env:MYSQL_PASSWORD = "admin"
+docker-compose up -d
+
+docker-compose ps
+```
+de esta forma muchos probremas, instalado heidi reinicio y compruebo si establece conexion
+
+falta:  
+- probar php en .html SI FUNCIONA
+- docker como servicio no con escritorio
+
+instalado mysql8, gestor bd heidi, lanzado script para importar datos"`/otros`", tras intntar establecer conexón me faltan las extensiones necesarias las añado en `Dockerfile` y como mi php ewsta en un contenedor y la bd esta fuera debemos apuntar a la IP del host Docker  
+```sh
+$host = 'host.docker.internal'; // Dirección del servidor de la base de datos
+```
+
+```sh
+    docker build -t huertamesa .
+
+    docker run -p 9090:80 -d -v $PWD/src:/var/www/html huertamesa
+```
+
+doy por cerrada esta rama ya funciona la conexion docker & bd
+
+siguiente comprobar que hay conexion y la animacion inicial
+
