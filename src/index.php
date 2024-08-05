@@ -1,55 +1,26 @@
+<?php
+function checkInternetConnection()
+{
+    $connected = @fsockopen("www.google.com", 80);
+    if ($connected) {
+        $is_conn = true;
+        fclose($connected);
+    } else {
+        $is_conn = false;
+    }
+    return $is_conn;
+}
+
+$internetConnection = checkInternetConnection();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-
-<body>
-
-
-    <?php
-    function checkInternetConnection()
-    {
-        $connected = @fsockopen("www.google.com", 80);
-        if ($connected) {
-            $is_conn = true;
-            fclose($connected);
-        } else {
-            $is_conn = false;
-        }
-        return $is_conn;
-    }
-
-    $internetConnection = checkInternetConnection();
-
-
-    //ANIMACION & CONEXION
-    try {
-        if ($internetConnection) {
-            echo "<div class='status'>";
-            echo "<div class='image-container'>";
-            echo "<img src='assets\img\gallery\authors.png' alt='Rotating Image' class='rotating-image' id='rotatingImage'>";
-            echo "</div>";
-            echo "</div>";
-        }
-         require("index.html");
-    } catch (\Throwable $th) {
-        throw $th;
-    }
-
-
-
-
-
-
-
-    ?>
-
-   
-
+    <title>Image Rotation</title>
     <style>
         .image-container {
             display: flex;
@@ -62,7 +33,6 @@
             width: 200px;
             height: 200px;
             animation: rotate 4s linear infinite;
-            animation-play-state: paused;
         }
 
         @keyframes rotate {
@@ -80,17 +50,45 @@
             margin-top: 20px;
         }
     </style>
+</head>
+
+<body>
+
+    <!-- <?php if ($internetConnection) : ?> -->
+        <div class="status" id="statusContainer">
+            <div class="image-container">
+                <img src="assets/img/icons/logo-trans_huerta-mesa.png" alt="Rotating Image" class="rotating-image" id="rotatingImage">
+            </div>
+            
+        </div>
+    <!-- <?php else : ?> -->
+        <!-- <p>Conexión a Internet: <strong>No disponible</strong></p> -->
+    <!-- <?php endif; ?> -->
+
+    
+
+    <?php include 'index.html'; ?>
+    
     <script>
-        // Start the animation
-        const rotatingImage = document.getElementById('rotatingImage');
-        rotatingImage.style.animationPlayState = 'running';
+        // document.addEventListener("DOMContentLoaded", function() {
 
-        // Stop the animation after 4 seconds
-        setTimeout(() => {
-            rotatingImage.style.animationPlayState = 'paused';
-        }, 4000);
+            // Start the animation
+            const rotatingImage = document.getElementById('rotatingImage');
+            const statusContainer = document.getElementById('statusContainer');
+            if (rotatingImage && statusContainer) {
+                rotatingImage.style.animationPlayState = 'running';
+
+                setTimeout(() => {
+                    rotatingImage.style.animationPlayState = 'paused';
+
+                    if (statusContainer) {
+                        statusContainer.parentNode.removeChild(statusContainer);
+                    }
+                }, 4000);
+            }
+
+        // });
     </script>
-
 </body>
 
 </html>
