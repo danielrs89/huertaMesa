@@ -20,7 +20,7 @@ $internetConnection = checkInternetConnection();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Rotation</title>
+    <title>Huerta Mesa</title>
     <style>
         .image-container {
             display: flex;
