@@ -1,7 +1,8 @@
-# De la huerta a la mesa
-Web project where you can find all the information about seasonal fruits and vegetables.
+# Web Proyect
+You can find all the information about seasonal fruits and vegetables.
 ![alt text](image.png)
-Launch a web "DockerFile" in Apache with php backend
+
+Launch a web "DockerFile" in Apache with php backend and BD MYSQL
 ```sh
 # Utiliza una imagen base de PHP con Apache
 FROM php:7.4-apache
